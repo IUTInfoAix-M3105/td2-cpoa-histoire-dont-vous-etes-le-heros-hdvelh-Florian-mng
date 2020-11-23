@@ -138,6 +138,11 @@ public class Event extends NodeMultiple {
 	public Event(string data) {
 		super(data);
 	}
+
+	public void run(){
+		gui.outputln(getData());
+		gui.output(PROMPT_ANSWER);
+	}
 }
 
 // eof
